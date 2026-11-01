@@ -1,0 +1,2 @@
+Pon aquí tus fotos (jpg, png, webp).
+En el HTML: <img src="imagenes/foto.jpg" alt="descripción">
