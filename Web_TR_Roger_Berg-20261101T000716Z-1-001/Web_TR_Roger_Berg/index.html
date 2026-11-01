@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estas segur/a?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="subtitulo"> TR Ciberseguretat · 2026-2027</p>
+    <h1><u>Estas segur/a?</u></h1>
+  </header>
+
+  <nav class="tabs" aria-label="Pestañas">
+    <button class="tab activo" data-tab="inici">Inici</button>
+    <button class="tab" data-tab="que">Que vaig fer</button>
+    <button class="tab" data-tab="phishing">Phishing</button>
+    <button class="tab" data-tab="rev">Reverse shell</button>
+    <button class="tab" data-tab="ransom">Ransomware</button>
+    <button class="tab" data-tab="recomano">Recomanacions</button>
+  </nav>
+
+  <main>
+    <section id="inici" class="panel activo">
+      <h2>Benvingut/da</h2>
+      <p>Sóc en Roger, estudiant de 2n de Batxillerat. Aqui trobaràs un resum de la part pràctica del meu treball de recerca.</p>
+      <p>La motivació darrere d'aquest treball és el meu interés pel món de la ciberseguretat, concretament el <i><b>"pentesting".</b></i></p>
+      <br>
+      <p>Fes servir les pestanyes de dalt per a navegar.</p>
+    </section>
+
+    <section id="que" class="panel">
+      <h2>Que vaig fer?</h2>
+      <p>Abans de començar el treball de recerca vaig estar utilitzat diverses distribucions de Linux en mode <i><b>"live boot"</b></i>. Les meves primeres distribucions van ser Kali i Parrot, les quals tenen un gran renom en el món de la ciberseguretat, però finalment, vaig decidir instalar Arch com a sistema operatiu natiu a un ordinador.</p>
+      <br>
+      <p>Una vegada començat el treball, vaig fer una extensa recerca sobre diferents vulnerabilitats i <i><b>malwares</b></i> per a analitzar en el meu propi equip d'una forma controlada.</p>
+      <p>Al realitzar les proves en els meus dispositius personals, la meva màxima prioritat era conèixer l'avast de les eines utilitzades</p>
+      <!-- <img src="imagenes/foto.jpg" alt="Descripción"> -->
+    </section>
+
+    <section id="phishing" class="panel">
+      <h2>Phishing</h2>
+      
+        
+    </section>
+
+
+    
+    <section id="rev" class="panel">
+      <h2>Reverse shell</h2>  
+    </section>
+
+    <section id="ransom" class="panel">
+      <h2>Ransomware</h2>
+      <p>Aquesta auditoria va consistir en una infecció al meu propi equip mitjançant una versió educativa d'un <b><i>ransomware</i></b> la qual apuntava a una ruta concreta i una extensió d'arxiu específica. Es van prendre tals mesures de seguretat ja que la màquina víctima va ser el meu propi ordinador.</p>
+      <img src="img\imgRansom.png" alt="foto-ransom-1" class="foto-prova"> 
+      <br>
+      <p>Els objectius d'aquesta auditoria van ser els següents:</p>
+      <ol>
+          <li style="margin-left: 30px;">Comprovar la dificultat de la creació d'un <b><i>ransomware</i></b></li>
+          <li style="margin-left: 30px;">Analitzar l'impacte d'un <b><i>ransomware</i></b></li>
+          <li style="margin-left: 30px;">Analitzar algun sistema de protecció contra <b><i>ransomware</i></b> i altres tipus de <b><i>malware</i></b></li>
+      </ol>
+      <br>
+      <p>Una vegada executat l'arxiu, al ser una versió educativa que no pretenia ser una còpia exacta d'un <b><i>ransomware</i></b> real, l'arxiu demanava mitjançant un <b><i>input</i></b> de tipus <b><i>string</i></b> la ruta absoluta dels arxius a encriptar.</p>
+      <p>Al introduïr la ruta absoluta dels arxius a encriptar, l'arxiu procedia a crear nous arxius amb el contingut dels antics encriptat i eliminava els arxius originals i, seguidament, proporcionava la <b><i>key</i></b> per consola per a poder revertir el procés posteriorment.</p>
+     <img src="img\imgRansom2.png" alt="foto-ransom-2" class="foto-prova"> 
+     <p>Avans de realitzar l'auditoria vaig preparar l'entorn amb la carpeta objectiu i diversos arxius amb extensió "<b><i>.txt</i></b>" en els que havia contrasenyes(falses) i altres continguts suposadament privats.</p>
+     <img src="img\imgRansom3.png" alt="foto-ransom-3" class="foto-prova"> 
+     <p>Finalment, al acabar tot el procés, quedava l'arxiu "<b><i>.txt.locked</i></b>" el qual contenia una cadena de caràcters il·legible degut al xifrat simètric "<b><i>fernet</i></b>".</p>
+     <img src="img\imgRansom4.png" alt="foto-ransom-4" class="foto-prova"> 
+    </section>
+
+    <section id="recomano" class="panel">
+      <h2>Qué recomiendo</h2>
+      <ul>
+        <li>Contrasenyes</li>
+          <ol>
+            <li style="margin-left: 30px;">Utilitzar contrasenyes robustes</li>
+            <li style="margin-left: 30px;">Canviar cada cert temps les teves contrasenyes</li>
+            <li style="margin-left: 30px;">Utilitzar gestors de contrasenyes. (EL DE GOOGLE NO!)</li>
+            <li style="margin-left: 30px;">Activar el 2FA</li>
+          </ol>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Roger Berg · Estas segur/a? 2026-2027</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
