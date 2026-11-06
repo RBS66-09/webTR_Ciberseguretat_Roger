@@ -49,6 +49,10 @@
     
     <section id="rev" class="panel">
       <h2>Reverse shell</h2>  
+      <p>Per a aquesta auditoria vaig infectar el meu equip personal amb una <b><i>reverse shell</i></b>. Aquesta va estar programada exclusivament en python i per a programar-la em vaig basar en un video del "<b><i>S4vitar</i></b>" però una vegada acabada, vaig pensar en possibles modificacions pel programa. En aquell moment se'm va ocòrrer la idea de fer que, a part d'enviar una connexió a la màquina atacant, que el programa recavés informació de l'equip infectat com ara el <b><i>SO</i></b>, la versió d'aquest, l'arquitectura del processador...</p>
+      <p>Durant l'auditoria em vaig trobar amb diversos problemes, entre els quals estàven l'antivirus de Windows, i la limitació que pateix i patia el programa per a operar fora de xarxes locals.</p>
+      <br>
+      <p>L'infecció era bastant senzilla, una vegada l'usuari obria el programari maliciós, l'arxiu feia enviar una connexió cap a la màquina atacant, la direcció <b><i>IP</i></b> de la qual estava <b><i>hardcoded</i></b>. Una vegada establerta la connexió, l'equip enviava a la màquina víctima l'informació esmentada al paràgraf anterior i obria una consola <b><i>cmd</i></b> en segon plà la qual podia se controlada amb màxims privilegis per la màquina atacant.</p>
     </section>
 
     <section id="ransom" class="panel">
