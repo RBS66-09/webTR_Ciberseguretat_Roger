@@ -54,7 +54,7 @@
     <section id="ransom" class="panel">
       <h2>Ransomware</h2>
       <p>Aquesta auditoria va consistir en una infecció al meu propi equip mitjançant una versió educativa d'un <b><i>ransomware</i></b> la qual apuntava a una ruta concreta i una extensió d'arxiu específica. Es van prendre tals mesures de seguretat ja que la màquina víctima va ser el meu propi ordinador.</p>
-      <img src="img\imgRansom.png" alt="foto-ransom-1" class="foto-prova"> 
+      <img src="imgRansom.png" alt="foto-ransom-1" class="foto-prova"> 
       <br>
       <p>Els objectius d'aquesta auditoria van ser els següents:</p>
       <ol>
@@ -65,11 +65,11 @@
       <br>
       <p>Una vegada executat l'arxiu, al ser una versió educativa que no pretenia ser una còpia exacta d'un <b><i>ransomware</i></b> real, l'arxiu demanava mitjançant un <b><i>input</i></b> de tipus <b><i>string</i></b> la ruta absoluta dels arxius a encriptar.</p>
       <p>Al introduïr la ruta absoluta dels arxius a encriptar, l'arxiu procedia a crear nous arxius amb el contingut dels antics encriptat i eliminava els arxius originals i, seguidament, proporcionava la <b><i>key</i></b> per consola per a poder revertir el procés posteriorment.</p>
-     <img src="webTR\imgRansom2.png" alt="foto-ransom-2" class="foto-prova"> 
+     <img src="imgRansom2.png" alt="foto-ransom-2" class="foto-prova"> 
      <p>Avans de realitzar l'auditoria vaig preparar l'entorn amb la carpeta objectiu i diversos arxius amb extensió "<b><i>.txt</i></b>" en els que havia contrasenyes(falses) i altres continguts suposadament privats.</p>
-     <img src="img\imgRansom3.png" alt="foto-ransom-3" class="foto-prova"> 
+     <img src="imgRansom3.png" alt="foto-ransom-3" class="foto-prova"> 
      <p>Finalment, al acabar tot el procés, quedava l'arxiu "<b><i>.txt.locked</i></b>" el qual contenia una cadena de caràcters il·legible degut al xifrat simètric "<b><i>fernet</i></b>".</p>
-     <img src="img\imgRansom4.png" alt="foto-ransom-4" class="foto-prova"> 
+     <img src="imgRansom4.png" alt="foto-ransom-4" class="foto-prova"> 
     </section>
 
     <section id="recomano" class="panel">
