@@ -9,3 +9,15 @@ tabs.forEach((tab) => {
     document.getElementById(tab.dataset.tab).classList.add("activo");
   });
 });
+const logo = document.getElementById("logo-inici");
+
+logo.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  tabs.forEach((t) => t.classList.remove("activo"));
+  panels.forEach((p) => p.classList.remove("activo"));
+
+  document.getElementById("inici").classList.add("activo");
+
+  document.querySelector('[data-tab="inici"]').classList.add("activo");
+});
