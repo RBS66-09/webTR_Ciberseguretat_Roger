@@ -9,7 +9,7 @@ tabs.forEach((tab) => {
     document.getElementById(tab.dataset.tab).classList.add("activo");
   });
 });
-const logo = document.getElementById("logo-inici");
+const logo = document.getElementById(".logo-inici");
 
 logo.addEventListener("click", (e) => {
   e.preventDefault();
