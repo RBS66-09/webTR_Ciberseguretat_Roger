@@ -1,23 +1,27 @@
-const tabs = document.querySelectorAll(".tab");
-const panels = document.querySelectorAll(".panel");
+const tabs = document.querySelectorAll('.tab');
+const panels = document.querySelectorAll('.panel');
+const logo = document.querySelector('.logo-inici');
+
+function activarPestana(nombreTab) {
+    tabs.forEach((t) => t.classList.remove('activo'));
+    panels.forEach((p) => p.classList.remove('activo'));
+
+    const botonDestino = document.querySelector(`.tab[data-tab="${nombreTab}"]`);
+    const panelDestino = document.getElementById(nombreTab);
+
+    if (botonDestino) botonDestino.classList.add('activo');
+    if (panelDestino) panelDestino.classList.add('activo');
+}
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.remove("activo"));
-    panels.forEach((p) => p.classList.remove("activo"));
-    tab.classList.add("activo");
-    document.getElementById(tab.dataset.tab).classList.add("activo");
-  });
+    tab.addEventListener('click', () => {
+        activarPestana(tab.dataset.tab);
+    });
 });
-const logo = document.getElementById(".logo-inici");
 
-logo.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  tabs.forEach((t) => t.classList.remove("activo"));
-  panels.forEach((p) => p.classList.remove("activo"));
-
-  document.getElementById("inici").classList.add("activo");
-
-  document.querySelector('[data-tab="inici"]').classList.add("activo");
-});
+if (logo) {
+    logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        activarPestana('inici');
+    });
+}
