@@ -9,8 +9,8 @@ function activarPestanya(nomTab) {
     const botoDesti = document.querySelector(`.tab[data-tab="${nomTab}"]`);
     const panellDesti = document.getElementById(nomTab);
 
-    if (botoDestino) botoDesti.classList.add('actiu');
-    if (panellDestino) panellDesti.classList.add('actiu');
+    if (botoDesti) botoDesti.classList.add('actiu');
+    if (panellDesti) panellDesti.classList.add('actiu');
 }
 
 tabs.forEach((tab) => {
