@@ -35,10 +35,10 @@ h1 { font-size: 1.8rem; margin-top: 0.2rem; }
 }
 
 .tab:hover { color: #e24a62; background: #1c2030; }
-.tab.activo { background: #1c2030; color: #e24a62; font-weight: 600; }
+.tab.actiu { background: #1c2030; color: #e24a62; font-weight: 600; }
 
 .panel { display: none; }
-.panel.activo { display: block; }
+.panel.actiu { display: block; }
 
 h2 { font-size: 1.25rem; color: #e24a62; margin-bottom: 0.8rem; }
 p, li { color: #ccc; }
