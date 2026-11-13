@@ -2,15 +2,15 @@ const tabs = document.querySelectorAll('.tab');
 const panels = document.querySelectorAll('.panel');
 const logo = document.querySelector('.logo-inici');
 
-function activarPestana(nombreTab) {
-    tabs.forEach((t) => t.classList.remove('activo'));
-    panels.forEach((p) => p.classList.remove('activo'));
+function activarPestanya(nomTab) {
+    tabs.forEach((t) => t.classList.remove('actiu'));
+    panels.forEach((p) => p.classList.remove('actiu'));
 
-    const botonDestino = document.querySelector(`.tab[data-tab="${nombreTab}"]`);
-    const panelDestino = document.getElementById(nombreTab);
+    const botoDesti = document.querySelector(`.tab[data-tab="${nomTab}"]`);
+    const panellDesti = document.getElementById(nomTab);
 
-    if (botonDestino) botonDestino.classList.add('activo');
-    if (panelDestino) panelDestino.classList.add('activo');
+    if (botoDestino) botoDesti.classList.add('actiu');
+    if (panellDestino) panellDesti.classList.add('actiu');
 }
 
 tabs.forEach((tab) => {
@@ -22,6 +22,6 @@ tabs.forEach((tab) => {
 if (logo) {
     logo.addEventListener('click', (e) => {
         e.preventDefault();
-        activarPestana('inici');
+        activarPestanya('inici');
     });
 }
