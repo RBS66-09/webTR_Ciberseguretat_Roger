@@ -1,27 +1,27 @@
-const tabs = document.querySelectorAll('.tab');
-const panels = document.querySelectorAll('.panel');
+const pestanyes = document.querySelectorAll('.pestanya');
+const panells = document.querySelectorAll('.panell');
 const logo = document.querySelector('.logo-inici');
 
-function activarPestanya(nomTab) {
-    tabs.forEach((t) => t.classList.remove('actiu'));
-    panels.forEach((p) => p.classList.remove('actiu'));
+function activarPestanya(nomPestanya) {
+  pestanyes.forEach((p) => p.classList.remove('activa'));
+  panells.forEach((pn) => pn.classList.remove('actiu'));
 
-    const botoDesti = document.querySelector(`.tab[data-tab="${nomTab}"]`);
-    const panellDesti = document.getElementById(nomTab);
+  const botoDesti = document.querySelector(`.pestanya[data-tab="${nomPestanya}"]`);
+  const panellDesti = document.getElementById(nomPestanya);
 
-    if (botoDesti) botoDesti.classList.add('actiu');
-    if (panellDesti) panellDesti.classList.add('actiu');
+  if (botoDesti) botoDesti.classList.add('activa');
+  if (panellDesti) panellDesti.classList.add('actiu');
 }
 
-tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-        activarPestana(tab.dataset.tab);
-    });
+pestanyes.forEach((pestanya) => {
+  pestanya.addEventListener('click', () => {
+    activarPestanya(pestanya.dataset.tab);
+  });
 });
 
 if (logo) {
-    logo.addEventListener('click', (e) => {
-        e.preventDefault();
-        activarPestanya('inici');
-    });
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    activarPestanya('inici');
+  });
 }
