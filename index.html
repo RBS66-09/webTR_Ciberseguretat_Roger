@@ -1,106 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estas segur/a?</title>
+  <title>Estàs segur/a?</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <p class="subtitulo"> TR Ciberseguretat · 2026-2027</p>
-    <!--<h1><u>Estas segur/a?</u></h1>-->
-    <a href="#inici" class="logo-inici" data-tab:"inici">
+    <p class="subtitol">TR Ciberseguretat · 2026-2027</p>
+    <a href="#inici" class="logo-inici" data-tab="inici">
       <img src="¿Estàs segur_a_.png" alt="Estàs segur/a? - Inici">
     </a>
   </header>
 
-  <nav class="tabs" aria-label="Pestañas">
-    <button class="tab activo" data-tab="inici">Inici</button>
-    <button class="tab" data-tab="que">Que vaig fer</button>
-    <button class="tab" data-tab="phishing">Phishing</button>
-    <button class="tab" data-tab="rev">Reverse shell</button>
-    <button class="tab" data-tab="ransom">Ransomware</button>
-    <button class="tab" data-tab="recomano">Recomanacions</button>
+  <nav class="pestanyes" aria-label="Pestanyes">
+    <button type="button" class="pestanya activa" data-tab="inici">Inici</button>
+    <button type="button" class="pestanya" data-tab="que">Què vaig fer</button>
+    <button type="button" class="pestanya" data-tab="phishing">Phishing</button>
+    <button type="button" class="pestanya" data-tab="rev">Reverse shell</button>
+    <button type="button" class="pestanya" data-tab="ransom">Ransomware</button>
+    <button type="button" class="pestanya" data-tab="recomano">Recomanacions</button>
   </nav>
 
   <main>
     <section id="inici" class="panell actiu">
       <h2>Benvingut/da</h2>
-      <p>Sóc en Roger, estudiant de 2n de Batxillerat. Aqui trobaràs un resum de la part pràctica del meu treball de recerca.</p>
-      <p>La motivació darrere d'aquest treball és el meu interés pel món de la ciberseguretat, concretament el <i><b>"pentesting".</b></i></p>
+      <p>Sóc en Roger, estudiant de 2n de batxillerat. Aquí trobaràs un resum de la part pràctica del meu treball de recerca.</p>
+      <p>La motivació darrere d'aquest treball és el meu interès pel món de la ciberseguretat, concretament el <b><i>"pentesting".</i></b></p>
       <br>
       <p>Fes servir les pestanyes de dalt per a navegar.</p>
     </section>
 
-    <section id="que" class="panel">
-      <h2>Que vaig fer?</h2>
-      <p>Abans de començar el treball de recerca vaig estar utilitzat diverses distribucions de Linux en mode <i><b>"live boot"</b></i>. Les meves primeres distribucions van ser Kali i Parrot, les quals tenen un gran renom en el món de la ciberseguretat, però finalment, vaig decidir instalar Arch com a sistema operatiu natiu a un ordinador.</p>
+    <section id="que" class="panell">
+      <h2>Què vaig fer?</h2>
+      <p>Abans de començar el treball de recerca vaig estar utilitzant diverses distribucions de Linux en mode <b><i>"live boot"</i></b>. Les meves primeres distribucions van ser Kali i Parrot, les quals tenen un gran renom en el món de la ciberseguretat, però finalment vaig decidir instal·lar Arch com a sistema operatiu natiu a un ordinador.</p>
       <br>
-      <p>Una vegada començat el treball, vaig fer una extensa recerca sobre diferents vulnerabilitats i <i><b>malwares</b></i> per a analitzar en el meu propi equip d'una forma controlada.</p>
-      <p>Al realitzar les proves en els meus dispositius personals, la meva màxima prioritat era conèixer l'avast de les eines utilitzades</p>
-      <!-- <img src="imagenes/foto.jpg" alt="Descripción"> -->
+      <p>Una vegada començat el treball, vaig fer una extensa recerca sobre diferents vulnerabilitats i <b><i>malwares</i></b> per a analitzar en el meu propi equip d'una forma controlada.</p>
+      <p>En realitzar les proves en els meus dispositius personals, la meva màxima prioritat era conèixer l'abast de les eines utilitzades.</p>
     </section>
 
-    <section id="phishing" class="panel">
+    <section id="phishing" class="panell">
       <h2>Phishing</h2>
-      <p>El <b><i>phishing</i></b> és un tipus de cibertac amb moltes variants. Totes elles tenen el mateix vector d'atac: l'enginyeria social.</p>
-      <p>Aquest tipus de ciberatac es pot realitzar mitjançant correu electrònic, <b><i>SMS</i></b>... L'objectiu de l'atacant sol ser induïr a l'usuari mitjançant manipulacions a entrar dins d'un enllaç, descarregar arxius...</p>
+      <p>El <b><i>phishing</i></b> és un tipus de ciberatac amb moltes variants. Totes elles tenen el mateix vector d'atac: l'enginyeria social.</p>
+      <p>Aquest tipus de ciberatac es pot realitzar mitjançant correu electrònic, <b><i>SMS</i></b>... L'objectiu de l'atacant sol ser induir l'usuari mitjançant manipulacions a entrar dins d'un enllaç, descarregar arxius...</p>
       <br>
-      <p>Aquesta auditoria va ser l'espina central del meu <b><i>TR</i></b>, ja que, tant l'introducció dels arxius a la màquina víctima com l'inducció a l'usuari per que proporcionés les seves credencials les vaig fer mitjançant <b><i>phishing</i></b> per correu electrònic. </p>
-      <p>L'exemple més clar de <b><i>phishing</i></b>, però, és el del panell d'inici de sessió. És per aixó que vaig fer una recerca d'eines que em permetéssin fer aquest tipus d'auditories d'una forma fàcil. Gràcies a aquesta recerca vaig trobar l'eina <b><i>Zphisher</i></b>.</p>
-      <img src="imgPhishing01.png" alt="foto-phishing-1" class="foto-prova"> 
-      <p>Aquesta eina permet desplegar temporalment una pàgina web que imiti el panell d'inici de sessió de diferents pàgines web bancàries, de reds socials... L'objectiu principal d'aquesta eina és la recolecció de credencials, però, a més d'aixó, l'eina també és capaç d'agafar la direcció <b><i>IPv4</i></b> de l'usuari, cosa que permet la geolocalització de la màquina víctima si aquesta s'introdueix a qualsevol pàgina web com "<b><i>IP Tracker</i></b>".</p>        
-      <img src="imgPhishing02.png" alt="foto-phishing-2" class="foto-prova"> 
+      <p>Aquesta auditoria va ser l'espina central del meu <b><i>TR</i></b>, ja que tant la introducció dels arxius a la màquina víctima com la inducció a l'usuari perquè proporcionés les seves credencials les vaig fer mitjançant <b><i>phishing</i></b> per correu electrònic.</p>
+      <p>L'exemple més clar de <b><i>phishing</i></b>, però, és el del panell d'inici de sessió. És per això que vaig fer una recerca d'eines que em permetessin fer aquest tipus d'auditories d'una forma fàcil. Gràcies a aquesta recerca vaig trobar l'eina <b><i>Zphisher</i></b>.</p>
+      <img src="imgPhishing01.png" alt="foto-phishing-1" class="foto-prova">
+      <p>Aquesta eina permet desplegar temporalment una pàgina web que imiti el panell d'inici de sessió de diferents pàgines web bancàries, de xarxes socials... L'objectiu principal d'aquesta eina és la recol·lecció de credencials, però, a més d'això, l'eina també és capaç d'agafar l'adreça <b><i>IPv4</i></b> de l'usuari, cosa que permet la geolocalització de la màquina víctima si aquesta s'introdueix a qualsevol pàgina web com "<b><i>IP Tracker</i></b>".</p>
+      <img src="imgPhishing02.png" alt="foto-phishing-2" class="foto-prova">
     </section>
 
-
-    
-    <section id="rev" class="panel">
-      <h2>Reverse shell</h2>  
-      <p>Per a aquesta auditoria vaig infectar el meu equip personal amb una <b><i>reverse shell</i></b>. Aquesta va estar programada exclusivament en python i per a programar-la em vaig basar en un video del "<b><i>S4vitar</i></b>" però una vegada acabada, vaig pensar en possibles modificacions pel programa. En aquell moment se'm va ocòrrer la idea de fer que, a part d'enviar una connexió a la màquina atacant, que el programa recavés informació de l'equip infectat com ara el <b><i>SO</i></b>, la versió d'aquest, l'arquitectura del processador...</p>
-      <p>Durant l'auditoria em vaig trobar amb diversos problemes, entre els quals estàven l'antivirus de Windows, i la limitació que pateix i patia el programa per a operar fora de xarxes locals.</p>
+    <section id="rev" class="panell">
+      <h2>Reverse shell</h2>
+      <p>Per a aquesta auditoria vaig infectar el meu equip personal amb una <b><i>reverse shell</i></b>. Aquesta va estar programada exclusivament en Python i per a programar-la em vaig basar en un vídeo d'"<b><i>S4vitar</i></b>", però una vegada acabada vaig pensar en possibles modificacions pel programa. En aquell moment se'm va ocórrer la idea de fer que, a part d'enviar una connexió a la màquina atacant, el programa recavés informació de l'equip infectat com ara el <b><i>SO</i></b>, la versió d'aquest, l'arquitectura del processador...</p>
+      <p>Durant l'auditoria em vaig trobar amb diversos problemes, entre els quals hi havia l'antivirus de Windows i la limitació que pateix i patia el programa per a operar fora de xarxes locals.</p>
       <br>
-      <p>L'infecció era bastant senzilla, una vegada l'usuari obria el programari maliciós, l'arxiu feia enviar una connexió cap a la màquina atacant, la direcció <b><i>IP</i></b> de la qual estava <b><i>hardcoded</i></b>. Una vegada establerta la connexió, l'equip enviava a la màquina víctima l'informació esmentada al paràgraf anterior i obria una consola <b><i>cmd</i></b> en segon plà la qual podia se controlada amb màxims privilegis per la màquina atacant.</p>
+      <p>La infecció era bastant senzilla: una vegada l'usuari obria el programari maliciós, l'arxiu enviava una connexió cap a la màquina atacant, l'adreça <b><i>IP</i></b> de la qual estava <b><i>hardcoded</i></b>. Una vegada establerta la connexió, l'equip enviava a la màquina atacant la informació esmentada al paràgraf anterior i obria una consola <b><i>cmd</i></b> en segon pla la qual podia ser controlada amb màxims privilegis per la màquina atacant.</p>
     </section>
 
-    <section id="ransom" class="panel">
+    <section id="ransom" class="panell">
       <h2>Ransomware</h2>
-      <p>Aquesta auditoria va consistir en una infecció al meu propi equip mitjançant una versió educativa d'un <b><i>ransomware</i></b> la qual apuntava a una ruta concreta i una extensió d'arxiu específica. Es van prendre tals mesures de seguretat ja que la màquina víctima va ser el meu propi ordinador.</p>
-      <img src="imgRansom.png" alt="foto-ransom-1" class="foto-prova"> 
+      <p>Aquesta auditoria va consistir en una infecció al meu propi equip mitjançant una versió educativa d'un <b><i>ransomware</i></b> la qual apuntava a una ruta concreta i una extensió d'arxiu específica. Es van prendre tals mesures de seguretat ja que la màquina víctima era el meu propi ordinador.</p>
+      <img src="imgRansom.png" alt="foto-ransom-1" class="foto-prova">
       <br>
       <p>Els objectius d'aquesta auditoria van ser els següents:</p>
       <ol>
-          <li style="margin-left: 30px;">Comprovar la dificultat de la creació d'un <b><i>ransomware</i></b></li>
-          <li style="margin-left: 30px;">Analitzar l'impacte d'un <b><i>ransomware</i></b></li>
-          <li style="margin-left: 30px;">Analitzar algun sistema de protecció contra <b><i>ransomware</i></b> i altres tipus de <b><i>malware</i></b></li>
+        <li>Comprovar la dificultat de la creació d'un <b><i>ransomware</i></b></li>
+        <li>Analitzar l'impacte d'un <b><i>ransomware</i></b></li>
+        <li>Analitzar algun sistema de protecció contra <b><i>ransomware</i></b> i altres tipus de <b><i>malware</i></b></li>
       </ol>
       <br>
-      <p>Una vegada executat l'arxiu, al ser una versió educativa que no pretenia ser una còpia exacta d'un <b><i>ransomware</i></b> real, l'arxiu demanava mitjançant un <b><i>input</i></b> de tipus <b><i>string</i></b> la ruta absoluta dels arxius a encriptar.</p>
-      <p>Al introduïr la ruta absoluta dels arxius a encriptar, l'arxiu procedia a crear nous arxius amb el contingut dels antics encriptat i eliminava els arxius originals i, seguidament, proporcionava la <b><i>key</i></b> per consola per a poder revertir el procés posteriorment.</p>
-     <img src="imgRansom2.png" alt="foto-ransom-2" class="foto-prova"> 
-     <p>Avans de realitzar l'auditoria vaig preparar l'entorn amb la carpeta objectiu i diversos arxius amb extensió "<b><i>.txt</i></b>" en els que havia contrasenyes(falses) i altres continguts suposadament privats.</p>
-     <img src="imgRansom3.png" alt="foto-ransom-3" class="foto-prova"> 
-     <p>Finalment, al acabar tot el procés, quedava l'arxiu "<b><i>.txt.locked</i></b>" el qual contenia una cadena de caràcters il·legible degut al xifrat simètric "<b><i>fernet</i></b>".</p>
-     <img src="imgRansom4.png" alt="foto-ransom-4" class="foto-prova"> 
+      <p>Una vegada executat l'arxiu, en ser una versió educativa que no pretenia ser una còpia exacta d'un <b><i>ransomware</i></b> real, l'arxiu demanava mitjançant un <b><i>input</i></b> de tipus <b><i>string</i></b> la ruta absoluta dels arxius a encriptar.</p>
+      <p>En introduir la ruta absoluta dels arxius a encriptar, l'arxiu procedia a crear nous arxius amb el contingut dels antics encriptat, eliminava els arxius originals i, seguidament, proporcionava la <b><i>key</i></b> per consola per a poder revertir el procés posteriorment.</p>
+      <img src="imgRansom2.png" alt="foto-ransom-2" class="foto-prova">
+      <p>Abans de realitzar l'auditoria vaig preparar l'entorn amb la carpeta objectiu i diversos arxius amb extensió "<b><i>.txt</i></b>" en els quals hi havia contrasenyes (falses) i altres continguts suposadament privats.</p>
+      <img src="imgRansom3.png" alt="foto-ransom-3" class="foto-prova">
+      <p>Finalment, en acabar tot el procés, quedava l'arxiu "<b><i>.txt.locked</i></b>", el qual contenia una cadena de caràcters il·legible degut al xifrat simètric "<b><i>fernet</i></b>".</p>
+      <img src="imgRansom4.png" alt="foto-ransom-4" class="foto-prova">
     </section>
 
-    <section id="recomano" class="panel">
+    <section id="recomano" class="panell">
       <h2>Què recomano</h2>
       <ul>
-        <li>Contrasenyes</li>
+        <li>Contrasenyes
           <ol>
-            <li style="margin-left: 30px;">Utilitzar contrasenyes robustes</li>
-            <li style="margin-left: 30px;">Canviar cada cert temps les teves contrasenyes</li>
-            <li style="margin-left: 30px;">Utilitzar gestors de contrasenyes. (EL DE GOOGLE NO!)</li>
-            <li style="margin-left: 30px;">Activar el 2FA</li>
+            <li>Utilitzar contrasenyes robustes</li>
+            <li>Canviar cada cert temps les teves contrasenyes</li>
+            <li>Utilitzar gestors de contrasenyes. (EL DE GOOGLE NO!)</li>
+            <li>Activar el 2FA</li>
           </ol>
+        </li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>Roger Berg · Estas segur/a? 2026-2027</p>
+    <p>Roger Berg · Estàs segur/a? 2026-2027</p>
   </footer>
 
   <script src="script.js"></script>
